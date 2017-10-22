@@ -20,8 +20,7 @@ class User extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo "Hello World";
-        $data['firstname']="aqib";
+	   $data['firstname']="aqib";
         $data['lastname']="butt";//$this->input->post('lastname');
         $data['username']="aqibbutt";//$this->input->post('username');
         $data['email']="aqbutt05@gmail.com";//$this->input->post('email');
@@ -30,7 +29,7 @@ class User extends CI_Controller {
 //        $this->load->model('user_model');
 //        $result=$this->user_model->add_bloggeruser($data);
 //            die(var_dump($result));
-		$data = array('page_name' => 'includes/loginModal');
+		$data = array('page_name' => 'includes/index');
 		$this->load->view('template', $data);
 	}
 }
